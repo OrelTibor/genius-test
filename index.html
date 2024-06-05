@@ -2,30 +2,30 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="./images/logo.svg" alt="Logo" />
+        <a href="/">
+          <img src="./images/logo.svg" alt="Logo" />
+        </a>
         <ul>
-          <li>
-            <span><a href="#">Наші традиції</a></span>
-          </li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#tradition-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <button type="button">Замовити дзвінок</button>
     </header>
+    <!-- Test Table -->
     <main>
       <section>
         <h1>Сучасна пекарня</h1>
       </section>
-      <section>
+      <section id="traditions-section">
         <ul>
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
@@ -43,7 +43,7 @@
         </p>
         <img src="./images/baker-man.jpg" alt="baker-man" />
       </section>
-      <section>
+      <section id="chefs-section">
         <h2>Наші найкращі шеф -кухарі</h2>
         <ul>
           <li>
@@ -69,7 +69,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -89,8 +89,16 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contacts-section">
         <h2>Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1645425005363!2d30.488671212449137!3d50.456660586797746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukrajina%2C%2002000!5e0!3m2!1ssk!2ssk!4v1717567506624!5m2!1ssk!2ssk"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -112,8 +120,8 @@
             <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/kYqtVFcaCSPZZRDG8" target="_blank"
-              >Україна, м. Київ, вул. Січових Стрільців 54
+            <a href="https://maps.app.goo.gl/kYqtVFcaCSPZZRDG8" target="_blank">
+              Україна, м. Київ, вул. Січових Стрільців 54
             </a>
           </li>
           <li>
@@ -128,7 +136,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2024 Дані захищені</p>
+        <p>&copy; 2024 Дані захищені</p>
       </address>
     </footer>
   </body>
