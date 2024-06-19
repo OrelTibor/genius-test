@@ -422,7 +422,7 @@ fill: var(--color-primary-light);
 }
 
 .address-icon:hover {
-  fill: var(--color-secondary-dark);
+  fill: var(--color-brand-normal);
 }
 
 .address-copyright {
