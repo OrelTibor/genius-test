@@ -82,15 +82,11 @@ ul {
 
 .visually-hidden {
   position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .container {
@@ -114,8 +110,10 @@ ul {
 }
 
 .button:hover {
-  background-color: var(--color-brand-dark);
+  /* background-color: var(--color-brand-dark); */
+  background-color: transparent;
   color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 /* Link */
 .link {
@@ -386,6 +384,7 @@ margin-bottom: 24px;
   border-radius: 50%;
   cursor: pointer;
   fill: var(--color-primary-dark);
+  transition: .3s;
 }
 
 .carousel-button:hover{
@@ -523,8 +522,10 @@ fill: var(--color-primary-light);
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .modal-btn-close{
@@ -533,4 +534,75 @@ fill: var(--color-primary-light);
   right: 40px;
 }
 
+/* Form */
+.form-field{
+position: relative;
+ margin-bottom: 32px; 
+}
+
+.form-label{
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.form-input{
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus{
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-input::placeholder{
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder{
+  color: var(--color-primary-dark);
+}
+
+.button-modal {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  font-weight: 600;
+  line-height: 27px;
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color .3s;
+  margin: 0 auto  24px;
+  display: block;
+}
+
+.button-modal:hover {
+  color: var(--color-brand-dark);
+  background-color: var(--color-primary-light)
+}
+
+.form-terms{
+  margin: 0 auto;
+  font-style: 12px;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 220px;
+}
+
+.form-terms-link{
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+
+}
 
